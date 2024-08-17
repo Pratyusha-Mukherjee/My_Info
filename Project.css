@@ -15,24 +15,32 @@ body {
   border-radius: 10px;
   margin: 20px auto;
   max-width: 800px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 .icons i {
   font-size: 24px;
   color: #333;
-  width: 50px; 
+  width: 50px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 50%; 
-  margin-right: 10px; 
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .icons i:hover {
   background-color: rgb(223, 211, 195);
+  transform: scale(1.1);
 }
 
 .hire-me {
@@ -43,6 +51,12 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hire-me:hover {
+  background-color: #333;
+  transform: scale(1.05);
 }
 
 main {
@@ -51,9 +65,15 @@ main {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: auto;
   min-height: 80vh;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+main:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 .section2 {
@@ -83,14 +103,17 @@ main {
   display: flex;
   align-items: center;
   padding: 10px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .rectangle:hover {
   border: 2px solid #3C3D37;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .iconlist {
@@ -99,11 +122,17 @@ main {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iconlist:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .items {
@@ -112,7 +141,7 @@ main {
 
 .items h4 {
   font-size: 1.2rem;
-  color: #333; /* Updated color */
+  color: #333;
 }
 
 .items {

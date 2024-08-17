@@ -1,10 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    font-family: 'Arial', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f5f6fa;
-    justify-content: center;
-    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 
@@ -17,7 +17,12 @@ body {
     border-radius: 10px;
     margin: 20px auto;
     max-width: 800px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .icons i {
@@ -31,9 +36,11 @@ body {
     text-align: center;
     border-radius: 50%; 
     margin-right: 10px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.icons  :hover {
+.icons i:hover {
     background-color: rgb(223, 211, 195);
+    transform: scale(1.1);
 }
 
 .hire-me {
@@ -44,30 +51,44 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+.hire-me:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+
 main {
     max-width: 800px;
     margin: 20px auto;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   height:600px;
- 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 600px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+main:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
 .container {
-    height:560px;
+    height: 560px;
     text-align: center;
     background-color: #f7f2f2;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .work-together h1 {
     font-size: 2em;
     margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
 .work-together p {
@@ -80,7 +101,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top:80px;
+    margin-top: 80px;
 }
 
 .hire-me, .copy-email {
@@ -92,12 +113,18 @@ main {
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hire-me {
     background-color: #000;
     color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hire-me:hover, .copy-email:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .copy-email {
@@ -109,12 +136,18 @@ main {
 .follow-me {
     margin-top: 100px;
     padding: 15px;
-    background-color:white;
+    background-color: white;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.follow-me:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
 .follow-me p {
@@ -130,23 +163,40 @@ main {
     padding: 10px;
     background-color: #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    background-color: #ecdfcc;
+    transform: scale(1.1);
 }
 
 footer {
     margin-top: 130px;
     font-size: 0.8em;
     color: #aaa;
+    text-align: center;
 }
 
 footer a {
     color: #777;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
+footer a:hover {
+    color: #333;
+}
 
-a{
+a {
     text-decoration: none;
-    color:#333
+    color: #333;
+    transition: color 0.3s ease;
 }
+
+a:hover {
+    color: #555;
+}
+
