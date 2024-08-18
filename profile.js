@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Dynamic Greeting Message Based on Time of Day
+
     const greetingElement = document.querySelector('.profile h1');
     const currentHour = new Date().getHours();
     let greetingMessage;
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     greetingElement.textContent = greetingMessage;
 
-    // Expandable Achievements Section
+    
     const achievementSections = document.querySelectorAll('.section');
     achievementSections.forEach(section => {
         const heading = section.querySelector('h3');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Smooth Scroll for Navigation
+    
     document.querySelectorAll('.navbar a').forEach(anchor => {
         anchor.addEventListener('click', function (event) {
             event.preventDefault();

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Filter Projects by Search Term
+    
     const projectItems = document.querySelectorAll('.rectangle');
     const searchInput = document.createElement('input');
     searchInput.setAttribute('type', 'text');
@@ -20,14 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Smooth Scroll to Project Section
+
     document.querySelector('.hire-me').addEventListener('click', function (event) {
         event.preventDefault();
         document.querySelector('.section2').scrollIntoView({ behavior: 'smooth' });
         showAlert("Redirecting to Hire Me form...");
     });
 
-    // Show Alert Function
+    
     function showAlert(message) {
         const alertBox = document.createElement('div');
         alertBox.className = 'alert-box';
@@ -50,6 +50,6 @@ document.querySelectorAll('a').forEach(link => {
         document.body.classList.remove('loaded');
         setTimeout(() => {
             window.location.href = targetUrl;
-        }, 1000); // Duration of fade-out effect
+        }, 1000); 
     });
 });

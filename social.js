@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Smooth Scroll for Navigation
+    
     document.querySelectorAll('.navbar a').forEach(anchor => {
         anchor.addEventListener('click', function (event) {
             event.preventDefault();
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Copy Email to Clipboard
+    
     const copyEmailButton = document.querySelector('.copy-email');
     copyEmailButton.addEventListener('click', function () {
         const email = "mukherjeepratyusha23@gmail.com";
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Dynamic Animations for Social Icons
+    
     const socialIcons = document.querySelectorAll('.social-icons a i');
     socialIcons.forEach(icon => {
         icon.addEventListener('mouseover', function () {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Button Hover Effect
+    
     const buttons = document.querySelectorAll('.actions button, .hire-me');
     buttons.forEach(button => {
         button.addEventListener('mouseover', function () {
@@ -66,6 +66,6 @@ document.querySelectorAll('a').forEach(link => {
         document.body.classList.remove('loaded');
         setTimeout(() => {
             window.location.href = targetUrl;
-        }, 1000); // Duration of fade-out effect
+        }, 1000); 
     });
 });
