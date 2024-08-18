@@ -5,8 +5,12 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
-
+body.loaded {
+    opacity: 1;
+}
 
 .navbar {
     display: flex;
@@ -174,7 +178,7 @@ main:hover {
 }
 
 footer {
-    margin-top: 130px;
+    margin-top: 100px;
     font-size: 0.8em;
     color: #aaa;
     text-align: center;
@@ -200,3 +204,11 @@ a:hover {
     color: #555;
 }
 
+.actions button, .hire-me {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}

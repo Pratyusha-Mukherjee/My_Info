@@ -5,8 +5,12 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
-
+body.loaded {
+    opacity: 1;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -162,4 +166,17 @@ main:hover {
 
 .section p {
     font-size: 1rem;
+}
+.section h3 {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.section h3.expanded {
+    color: #4CAF50;
+}
+
+.section p {
+    transition: all 0.3s ease;
+    margin-top: 10px;
 }
