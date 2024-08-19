@@ -1,0 +1,216 @@
+body {
+    background-color: #121212; /* Dark background for night mode */
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+body.loaded {
+    opacity: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1f1f1f; /* Darker background for navbar */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for night mode */
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+.icons i {
+    font-size: 24px;
+    color: #e0e0e0; /* Light icon color */
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%; 
+    margin-right: 10px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.icons i:hover {
+    background-color: #333; /* Darker background on hover */
+    transform: scale(1.1);
+}
+
+.hire-me {
+    background-color: #333; /* Darker background for button */
+    color: #e0e0e0; /* Light text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.hire-me:hover {
+    background-color: #555; /* Slightly lighter on hover */
+    transform: scale(1.05);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #1f1f1f; /* Dark background for main content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for night mode */
+    height: 600px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+main:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+    transform: translateY(-2px);
+}
+
+.container {
+    height: 560px;
+    text-align: center;
+    background-color: #1f1f1f; /* Dark background for container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for night mode */
+}
+
+.work-together h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #e0e0e0; /* Light text color */
+    transition: color 0.3s ease;
+}
+
+.work-together p {
+    font-size: 1.2em;
+    color: #bbb; /* Lighter text color */
+    margin-bottom: 20px;
+}
+.container:hover{
+    border:2px solid rgb(162, 202, 113);
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 80px;
+}
+
+.hire-me, .copy-email {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hire-me {
+    background-color: #333; /* Darker background for button */
+    color: #e0e0e0; /* Light text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for night mode */
+}
+
+.hire-me:hover, .copy-email:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+.copy-email {
+    background-color: #333; /* Darker background for button */
+    color: #e0e0e0; /* Light text color */
+    border: 1px solid #555; /* Darker border for button */
+}
+
+.follow-me {
+    margin-top: 100px;
+    padding: 15px;
+    background-color: #1f1f1f; /* Darker background for follow-me section */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.follow-me:hover {
+    box-shadow: 0 8px 16px white; /* Darker shadow on hover */
+    transform: translateY(-2px);
+}
+
+.follow-me p {
+    font-size: 1em;
+    color: #bbb; /* Lighter text color */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icons i {
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: #333; /* Darker background for social icons */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for night mode */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    background-color: #555; /* Lighter background on hover */
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 100px;
+    font-size: 0.8em;
+    color: #aaa; /* Lighter text color for footer */
+    text-align: center;
+}
+
+footer a {
+    color: #e0e0e0; /* Light text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #bbb; /* Slightly lighter on hover */
+}
+
+a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light text color */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #bbb; /* Slightly lighter on hover */
+}
+
+.actions button, .hire-me {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
