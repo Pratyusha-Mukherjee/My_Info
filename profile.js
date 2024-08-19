@@ -9,8 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
         greetingMessage = "Good Morning, It's me Pratyusha";
     } else if (currentHour >= 12 && currentHour < 18) {
         greetingMessage = "Good Afternoon, It's me Pratyusha";
-    } else {
+    } else if(currentHour >= 18 && currentHour < 20){
         greetingMessage = "Good Evening, It's me Pratyusha";
+    }else{
+        greetingMessage = "Good Night, It's me Pratyusha";
     }
     
     greetingElement.textContent = greetingMessage;
@@ -20,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     achievementSections.forEach(section => {
         const heading = section.querySelector('h3');
         const paragraph = section.querySelector('p');
-        paragraph.style.display = 'none'; // Hide initially
+        paragraph.style.display = 'none'; 
 
         heading.addEventListener('click', function () {
             const isExpanded = paragraph.style.display === 'block';
