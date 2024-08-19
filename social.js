@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    
     document.querySelectorAll('.navbar a').forEach(anchor => {
         anchor.addEventListener('click', function (event) {
             event.preventDefault();
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    
     const copyEmailButton = document.querySelector('.copy-email');
     copyEmailButton.addEventListener('click', function () {
         const email = "mukherjeepratyusha23@gmail.com";
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    
     const socialIcons = document.querySelectorAll('.social-icons a i');
     socialIcons.forEach(icon => {
         icon.addEventListener('mouseover', function () {
@@ -39,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    
     const buttons = document.querySelectorAll('.actions button, .hire-me');
     buttons.forEach(button => {
         button.addEventListener('mouseover', function () {
@@ -54,18 +50,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-});
-document.addEventListener('DOMContentLoaded', function() {
-    document.body.classList.add('loaded');
-});
-
-document.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault();
-        const targetUrl = this.getAttribute('href');
-        document.body.classList.remove('loaded');
-        setTimeout(() => {
-            window.location.href = targetUrl;
-        }, 1000); 
+    // Open external links in a new tab
+    document.querySelectorAll('.social-icons a').forEach(link => {
+        link.setAttribute('target', '_blank');
     });
+
+    // Handle the navigation back to the main page
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetUrl = this.getAttribute('href');
+            document.body.classList.remove('loaded');
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, 1000);
+        });
+    });
+
+    document.body.classList.add('loaded');
 });
